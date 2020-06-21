@@ -1,0 +1,177 @@
+{
+  "basics": {
+    "name": "Mohammad Abdul Ahad Chowdhury",
+    "label": "Web developer",
+    "picture": "https://github.com/maacpiash.png",
+    "email": "maacpiash@outlook.com",
+    "phone": "+61482605155",
+    "website": "https://www.maacpiash.com",
+    "summary": "Bangladeshi graduate student of data science at Macquarie University, with professional experience in full-stack web development and academic experience in machine learning projects. Currently looking for part-time or casual employment in the IT industry.",
+    "location": {
+      "address": "Unit 11, 53 Constitution Road",
+      "postalCode": "NSW 2114",
+      "city": "Meadowbank",
+      "countryCode": "AU",
+      "region": "New South Wales"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "maacpiash",
+        "url": "http://github.com/maacpiash"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "maacpiash",
+        "url": "http://linkedin.com/in/maacpiash"
+      },
+      {
+        "network": "Skype",
+        "username": "maacpiash",
+        "url": "skype:maacpiash?chat"
+      },
+      {
+        "network": "NPM",
+        "username": "maacpiash",
+        "url": "https://www.npmjs.com/~maacpiash"
+      },
+      {
+        "network": "NuGet",
+        "username": "maacpiash",
+        "url": "https://www.nuget.org/profiles/maacpiash"
+      },
+      {
+        "network": "Twitter",
+        "username": "maacpiash",
+        "url": "https://twitter.com/maacpiash"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Dynamic Solution Innovators Ltd.",
+      "position": "Junior Software Engineer",
+      "website": "http://www.dsinnovators.com",
+      "startDate": "2019-02-01",
+      "endDate": "2020-01-31",
+      "summary": "Full-time employment. Worked on Node.js-based web applications: the [OpenCRVS project](https://github.com/opencrvs/opencrvs-core) and the enterprise solution of [Olwel](https://olwel.com), a healthcare startup.",
+      "highlights": [
+        "Added new components, features, and bug-fixes to client-side software (React.js, Electron.js, Material-UI).",
+        "Implemented features and optimization on server-side software (Hapi.js).",
+        "Optimized database queries (RethinkDB).",
+        "Wrote unit (Jest, Mocha), integration (Enzyme), and e2e (Cypress) tests. Refactored code to increase code coverage."
+      ]
+    },
+    {
+      "company": "North South University",
+      "position": "Research Assistant",
+      "website": "http://www.ipsnews.net/2017/05/flying-green-in-bangladesh/",
+      "startDate": "2016-11-01",
+      "endDate": "2018-04-06",
+      "summary": "Part-time employment under the university's [Department of Environmental Science and Management](http://www.northsouth.edu/academic/shls/esm/) for a research project titled “Satellite-based Navigation in Civil Aviation: Performance Evaluation in the Context of Bangladesh”.",
+      "highlights": [
+        "Developed the desktop application (using Windows Forms) for NODES, an airline management software that uses linear optimization on criteria (e.g. destinations, customar demands) to maximize usage of resources (e.g. aircrafts, hubs)."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Macquarie University",
+      "area": "Data Science",
+      "studyType": "Masters",
+      "startDate": "2020-02-26",
+      "endDate": "2021-12-31",
+      "gpa": "TBD",
+      "courses": [
+        "[Data Science](https://github.com/maacpiash/COMP6200)",
+        "[Big Data](https://github.com/maacpiash/COMP6210)"
+      ]
+    },
+    {
+      "institution": "North South University",
+      "area": "Computer Science and Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2014-01-01",
+      "endDate": "2018-08-31",
+      "gpa": "2.98",
+      "courses": [
+        "[Artificial Intelligence](https://github.com/maacpiash/CSE440)",
+        "[Theory of Fuzzy Systems](https://github.com/maacpiash/CSE470)",
+        "[Computer Graphics](https://github.com/maacpiash/SpaceShooter)",
+        "[Software Engineering](https://github.com/maacpiash/CSE327)",
+        "[Microprocessor Interfacing & Embedded Systems](https://github.com/maacpiash/CSE327)"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "name": "Selection of Most Suitable Secondary School Alternative by Multi-Criteria Fuzzy Analytic Hierarchy Process.",
+      "publisher": "Springer/AISC",
+      "releaseDate": "2018-08-15",
+      "website": "https://link.springer.com/chapter/10.1007/978-3-319-98678-4_29",
+      "summary": "Selecting the most suitable secondary school for a student is a multi-criteria decision problem. In this paper we propose a system that uses fuzzy analytic hierarchy process (AHP) to define and evaluate linguistic variables that represent these criteria. This system takes some of them as crisp inputs and a set of fuzzy linguistic values from the user that denote relative importance measures, as deemed by the user, for every possible pair of these factors. Then it uses Fuzzy AHP to calculate absolute weights for each factor and comparative scores for a few user-selected schools for each criterion. These values are used to assign a final score to each school, which is the measurement of its suitability for the given input."
+    },
+    {
+      "name": "Fruit Image Classification Using Convolutional Newral Neural Networks",
+      "publisher": "IGI Global/IJSI",
+      "releaseDate": "2019",
+      "website": "https://www.igi-global.com/gateway/article/236206",
+      "summary": "Convolutional neural networks (CNN) are the most popular class of models for image recognition and classification task nowadays. Most of the superstores and fruit vendors resort to human inspection to check the quality of the fruits stored in their inventory. However, this process can be automated. We propose a system that can be trained with a fruit image dataset and then detect whether a fruit is rotten or fresh from an input image. We built the initial model using the Inception V3 model and trained with our dataset applying transfer learning."
+    },
+    {
+      "name": "Fusion of BWM and AHP MCDM Methods to Choose the Most Suitable Secondary School for an Individual in the Context of Bangladesh",
+      "publisher": "World Scientific/VJCS",
+      "releaseDate": "2019-06-21",
+      "website": "https://www.worldscientific.com/doi/abs/10.1142/S2196888819500167",
+      "summary": "Choosing the best schools from a group of schools is a multi-criteria decision-making (MCDM) problem. In this paper, we have represented a method that uses the fusion of two multi-criteria decision-making methods, Best–Worst Method (BWM) and Analytic Hierarchy Process (AHP), to rank some of the user preferred alternatives. The system considers the choice of the user and the quality of the alternatives to rank them. User preferences on the criteria are taken as inputs in the form of best–worst comparison vectors to measure the choice of the user. These values are applied to calculate the numeric weights of each of the criteria. These weights reflect the preference of the user. A dataset of secondary schools in Bangladesh has been compiled and used for automatic quantitative pairwise comparison on the alternatives to calculate the score of each alternative in every criterion, which reflects its quality in that criterion. These scores are calculated using AHP. The weights of the criteria as well as the scores of these alternatives in those criteria are then used to calculate the final score of the alternatives and to rank them accordingly. An extensive experimental analysis and comparative study is reported at the end of this paper."
+
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming languages",
+      "level": "Intermediate",
+      "keywords": ["C#", "JavaScript(ES6)", "TypeScript", "Python", "C", "Java", "C++"]
+    },
+    {
+      "name": "Web development",
+      "level": "Intermediate",
+      "keywords": ["ASP.NET Core", "Entity Framework Core", "Blazor", "Identity Framework", "Node.js", "React.js", "Angular", "Express.js", "Hapi.js", "Socket.IO", "ReST", "GraphQL", "Microservices Architecture"]
+    },
+    {
+      "name": "Desktop app development",
+      "level": "Intermediate",
+      "keywords": ["Windows Forms", "WPF", "UWP", "Electron.js"]
+    },
+    {
+      "name": "Data science and engineering",
+      "level": "Beginner",
+      "keywords": ["Jupyter Notebook", "NumPy", "Pandas", "Matplotlib", "NLTK", "Scikit-Learn"]
+    },
+    {
+      "name": "Database systems",
+      "level": "Intermediate",
+      "keywords": ["MongoDB", "Microsoft SQL Server", "PostgreSQL", "SQLite", "RethinkDB"]
+    },
+    {
+      "name": "DevOps",
+      "level": "Beginner",
+      "keywords": ["Docker", "MongoDB Atlas", "Heroku", "Azure App Service", "Travis", "AppVeyor"]
+    },
+    {
+      "name": "Development methodology",
+      "level": "Beginner",
+      "keywords": ["Agile", "Scrum"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Bengali",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "IELTS (Academic Module) Score: 8.0"
+    }
+  ]
+}
