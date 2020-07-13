@@ -1,0 +1,178 @@
+%-------------------------
+% Resume in Latex
+%------------------------
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[ddmmmyyyy]{datetime}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\lfoot{Last updated on \today. Latest version of this document can be found at \href{https://pia.sh/resume}{\underline{pia.sh/resume}}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{ #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Mohammad Abdul Ahad Chowdhury} & Mobile: +61482605155\\
+  Unit 11, 53 Constitution Road, Meadowbank, NSW 2114 & Email: \href{mailto:ahad@maacpiash.com}{ahad@maacpiash.com}\\
+  \href{https://www.maacpiash.com/}{www.maacpiash.com} & \href{https://github.com/maacpiash}{\underline{GitHub}} • \href{https://linkedin.com/in/maacpiash}{\underline{LinkedIn}}\\
+\end{tabular*}
+
+\section{Profile summary}
+Bangladeshi graduate student of data science, with professional experience in full-stack web development. Currently looking for part-time employment or an internship in the IT industry.
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Macquarie University}{New South Wales, Australia}
+      {Master of Data Science}{February 2020 -- Present}
+      
+      Expected to graduate in December 2021.
+      \newline
+      Coursework: \href{https://github.com/maacpiash/COMP6200}{Data Science} • \href{https://github.com/maacpiash/COMP6210}{Big Data}
+    \resumeSubheading
+      {North South University}{Dhaka, Bangladesh}
+      {Bachelor of Science in Computer Science and Engineering}{January 2014 -- August 2018}
+      
+      Capstone project: Fruit Image Classification Using Convolutional Neural Networks
+      \newline
+      Coursework: \href{https://github.com/maacpiash/CSE440}{Artificial Intelligence} • \href{https://github.com/maacpiash/CSE470}{Theory of Fuzzy Systems} • \href{https://github.com/maacpiash/CSE327}{Software Engineering} • \href{https://github.com/maacpiash/CSE331}{Microprocessor Interfacing \& Embedded System} • \href{https://github.com/maacpiash/SpaceShooter}{Computer Graphics}
+  \resumeSubHeadingListEnd
+
+
+%-----------WORK EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Dynamic Solution Innovators Ltd.}{Dhaka, Bangladesh}
+      {Junior Software Engineer}{February 2019 -- January 2020}
+      
+      Full-time employment working on Node.js-based full-stack (React.js and Hapi.js) web applications: the OpenCRVS project, and the enterprise solution of Olwel, a healthcare startup. Agile methodology (scrum) was followed.
+      \newline
+      \textbf{Responsibilities}: Added new features and components; fixed bugs; optimized API calls and database queries (RethinkDB); wrote database migration scripts (RethinkDB); wrote unit (Jest, Mocha), integration (Enzyme), and end-to-end tests (Cypress).\newline [View my commits for OpenCRVS on GitHub \href{https://github.com/opencrvs/opencrvs-core/commits?author=maacpiash}{\underline{here}}]
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {North South University}{Dhaka, Bangladesh}
+      {Research Assistant}{November 2016 -- April 2018}
+      
+      Part-time employment working on a research project under the university’s Department of Environmental Science and Management (\href{http://www.ipsnews.net/2017/05/flying-green-in-bangladesh/}{\underline{relevant news article}})
+      \newline
+      \textbf{Responsibility}: Developed the front-end software (.NET, Windows Forms) of NODES, an airline management system that uses linear optimization to maximize usage of airline resources.
+     
+  \resumeSubHeadingListEnd
+  
+  %-----------Technical Skills-----------------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Programming languages}
+      {C\#, JavaScript (ES6), TypeScript, Python, C, Java, C++}
+    \resumeSubItem{Web development}
+      {ASP.NET Core, Entity Framework Core, Blazor, Node.js, Express.js, Hapi.js, Angular, React.js, Webpack, ReST, GraphQL, Socket.IO, Microservices architecture}
+    \resumeSubItem{Machine learning}
+      {Jupyter Notebook, Pandas, NLTK, Scikit-Learn, ML.NET}
+    \resumeSubItem{Desktop app development}
+      {Windows Forms, WPF, UWP, Electron.js, JavaFX}
+    \resumeSubItem{Database}
+      {MongoDB, MySQL, Microsoft SQL Server, PostgreSQL, SQLite, RethinkDB}
+    \resumeSubItem{DevOps}
+      {Docker, Heroku, Azure App Service, MongoDB Atlas, Travis CI, AppVeyor}
+  \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+
+%-----------PROJECTS-----------------
+\section{Personal Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{KonSchool}
+      {ASP.NET Core, MongoDB [\href{https://github.com/maacpiash/KonSchool}{\underline{GitHub}} • \href{https://konschool.azurewebsites.net/}{\underline{Azure}} • \href{https://konschool.herokuapp.com}{\underline{Heroku}} • \href{https://hub.docker.com/r/maacpiash/konschool}{\underline{Docker}}] -- 
+      Fuzzy-AHP-based recommendation system for secondary schools in Bangladesh.}
+    \resumeSubItem{Connery}
+      {ML.NET, ASP.NET Core [\href{https://github.com/maacpiash/Connery}{\underline{GitHub}} • \href{https://connery-api.herokuapp.com}{\underline{API (swagger)}}] -- Fruit-image-classifier using convolutional neural networks.}
+    \resumeSubItem{MqFind}
+      {Node.js, TypeScript, React.js, Hapi.js, Webpack, Lerna, Docker Compose [\href{https://github.com/maacpiash/MqFind}{\underline{GitHub}} • \href{https://mqfind-api.herokuapp.com}{\underline{API}}] -- A full-stack web app that shows listings of accommodation near Macquarie University campuses.}
+    \resumeSubItem{Vardict}
+      {Node.js, TypeScript [\href{https://github.com/maacpiash/vardict}{\underline{GitHub}} • \href{https://www.npmjs.com/package/vardict/}{\underline{NPM}}] -- A basic Node.js package for parsing labeled CLI arguments.}
+    \resumeSubItem{Winston}
+      {Cmake [\href{https://github.com/maacpiash/Winston}{\underline{GitHub}}] -- Implementation of neural networks from scratch, in C. \textit{WIP}.}
+  \resumeSubHeadingListEnd
+
+\end{document}
