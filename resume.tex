@@ -1,7 +1,7 @@
 %-------------------------
 % Resume in Latex
 %------------------------
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letter-paper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -15,6 +15,7 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage[ddmmmyyyy]{datetime}
+\usepackage[a4paper, margin=1in]{geometry}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -65,6 +66,12 @@
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
 
+\newcommand{\pubItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}\vspace{-3pt}
+  }
+}
+
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
@@ -81,7 +88,7 @@
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\Large Mohammad Abdul Ahad Chowdhury} & Mobile: +61482605155\\
   Unit 11, 53 Constitution Road, Meadowbank, NSW 2114 & Email: \href{mailto:ahad@maacpiash.com}{ahad@maacpiash.com}\\
-  \href{https://www.maacpiash.com/}{www.maacpiash.com} & \href{https://github.com/maacpiash}{\underline{GitHub}} • \href{https://linkedin.com/in/maacpiash}{\underline{LinkedIn}}\\
+  \href{https://www.maacpiash.com/}{www.maacpiash.com} & \href{https://github.com/maacpiash}{\underline{GitHub}} • \href{https://linkedin.com/in/maacpiash}{\underline{LinkedIn}} • \href{https://join.skype.com/invite/UVzqFuCFERPh}{\underline{Skype}}\\
 \end{tabular*}
 
 \section{Profile summary}
@@ -97,14 +104,14 @@ Bangladeshi graduate student of data science, with professional experience in fu
       
       Expected to graduate in December 2021.
       \newline
-      Coursework: \href{https://github.com/maacpiash/COMP6200}{Data Science} • \href{https://github.com/maacpiash/COMP6210}{Big Data}
+      Coursework: \href{https://github.com/maacpiash/COMP6200}{Data Science}, \href{https://github.com/maacpiash/COMP6210}{Big Data}
     \resumeSubheading
       {North South University}{Dhaka, Bangladesh}
       {Bachelor of Science in Computer Science and Engineering}{January 2014 -- August 2018}
       
       Capstone project: Fruit Image Classification Using Convolutional Neural Networks
       \newline
-      Coursework: \href{https://github.com/maacpiash/CSE440}{Artificial Intelligence} • \href{https://github.com/maacpiash/CSE470}{Theory of Fuzzy Systems} • \href{https://github.com/maacpiash/CSE327}{Software Engineering} • \href{https://github.com/maacpiash/CSE331}{Microprocessor Interfacing \& Embedded System} • \href{https://github.com/maacpiash/SpaceShooter}{Computer Graphics}
+      Coursework: \href{https://github.com/maacpiash/CSE440}{Artificial Intelligence}, \href{https://github.com/maacpiash/CSE470}{Theory of Fuzzy Systems}, \href{https://github.com/maacpiash/CSE327}{Software Engineering}, \href{https://github.com/maacpiash/CSE331}{Microprocessor Interfacing \& Embedded System}, \href{https://github.com/maacpiash/SpaceShooter}{Computer Graphics}
   \resumeSubHeadingListEnd
 
 
@@ -116,9 +123,9 @@ Bangladeshi graduate student of data science, with professional experience in fu
       {Dynamic Solution Innovators Ltd.}{Dhaka, Bangladesh}
       {Junior Software Engineer}{February 2019 -- January 2020}
       
-      Full-time employment working on Node.js-based full-stack (React.js and Hapi.js) web applications: the OpenCRVS project, and the enterprise solution of Olwel, a healthcare startup. Agile methodology (scrum) was followed.
+      Full-time employment working on Node.js-based full-stack (React.js and Hapi.js) web applications: the \href{https://opencrvs.org}{\underline{OpenCRVS}} project, and the enterprise solution of \href{https://olwel.com}{\underline{Olwel}}, a healthcare startup. Agile methodology (scrum) was followed.
       \newline
-      \textbf{Responsibilities}: Added new features and components; fixed bugs; optimized API calls and database queries (RethinkDB); wrote database migration scripts (RethinkDB); wrote unit (Jest, Mocha), integration (Enzyme), and end-to-end tests (Cypress).\newline [View my commits for OpenCRVS on GitHub \href{https://github.com/opencrvs/opencrvs-core/commits?author=maacpiash}{\underline{here}}]
+      \textbf{Responsibilities}: Added new features and components; fixed bugs; optimized API calls and database queries (RethinkDB); wrote database migration scripts (RethinkDB); wrote unit tests (Jest, Mocha).\newline [View my commits for OpenCRVS on GitHub \href{https://github.com/opencrvs/opencrvs-core/commits?author=maacpiash}{\underline{here}}]
       
 % --------Multiple Positions Heading------------
 %    \resumeSubSubheading
@@ -134,7 +141,7 @@ Bangladeshi graduate student of data science, with professional experience in fu
       {North South University}{Dhaka, Bangladesh}
       {Research Assistant}{November 2016 -- April 2018}
       
-      Part-time employment working on a research project under the university’s Department of Environmental Science and Management (\href{http://www.ipsnews.net/2017/05/flying-green-in-bangladesh/}{\underline{relevant news article}})
+      Part-time employment working on a research project. (\href{http://www.ipsnews.net/2017/05/flying-green-in-bangladesh/}{\underline{relevant news article}})
       \newline
       \textbf{Responsibility}: Developed the front-end software (.NET, Windows Forms) of NODES, an airline management system that uses linear optimization to maximize usage of airline resources.
      
@@ -147,32 +154,40 @@ Bangladeshi graduate student of data science, with professional experience in fu
       {C\#, JavaScript (ES6), TypeScript, Python, C, Java, C++}
     \resumeSubItem{Web development}
       {ASP.NET Core, Entity Framework Core, Blazor, Node.js, Express.js, Hapi.js, Angular, React.js, Webpack, ReST, GraphQL, Socket.IO, Microservices architecture}
-    \resumeSubItem{Machine learning}
+    \resumeSubItem{Machine learning \& data science}
       {Jupyter Notebook, Pandas, NLTK, Scikit-Learn, ML.NET}
     \resumeSubItem{Desktop app development}
       {Windows Forms, WPF, UWP, Electron.js, JavaFX}
-    \resumeSubItem{Database}
+    \resumeSubItem{Database systems}
       {MongoDB, MySQL, Microsoft SQL Server, PostgreSQL, SQLite, RethinkDB}
     \resumeSubItem{DevOps}
       {Docker, Heroku, Azure App Service, MongoDB Atlas, Travis CI, AppVeyor}
   \resumeSubHeadingListEnd
-
-\vspace{-5pt}
+  
+  %-----------Publication-----------------
+\section{Publication}
+  \resumeSubHeadingListStart
+    \pubItem
+      {Selection of Most Suitable Secondary School Alternative by Multi-Criteria Fuzzy Analytic Hierarchy Process. [\href{https://link.springer.com/chapter/10.1007\%2F978-3-319-98678-4_29}{\underline{Springer/AISC, 2019}}]}
+    \pubItem
+      {Fruit Image Classification Using Convolutional Neural Networks. [\href{https://www.igi-global.com/gateway/article/236206}{\underline{IGI Global/IJSI, 2019}}]}
+    \pubItem
+      {Fusion of BWM and AHP MCDM Methods to Choose the Most Suitable Secondary School for an Individual in the Context of Bangladesh. [\href{https://www.worldscientific.com/doi/abs/10.1142/S2196888819500167}{\underline{World Scientific/VJCS, 2019}}]}
+  \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Personal Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{KonSchool}
-      {ASP.NET Core, MongoDB [\href{https://github.com/maacpiash/KonSchool}{\underline{GitHub}} • \href{https://konschool.azurewebsites.net/}{\underline{Azure}} • \href{https://konschool.herokuapp.com}{\underline{Heroku}} • \href{https://hub.docker.com/r/maacpiash/konschool}{\underline{Docker}}] -- 
-      Fuzzy-AHP-based recommendation system for secondary schools in Bangladesh.}
+      {Fuzzy-AHP-based recommendation system for secondary schools in Bangladesh. -- ASP.NET Core, MongoDB [\href{https://github.com/maacpiash/KonSchool}{\underline{GitHub}} • \href{https://konschool.azurewebsites.net/}{\underline{Azure}} • \href{https://konschool.herokuapp.com}{\underline{Heroku}} • \href{https://hub.docker.com/r/maacpiash/konschool}{\underline{Docker}}]}
     \resumeSubItem{Connery}
-      {ML.NET, ASP.NET Core [\href{https://github.com/maacpiash/Connery}{\underline{GitHub}} • \href{https://connery-api.herokuapp.com}{\underline{API (swagger)}}] -- Fruit-image-classifier using convolutional neural networks.}
+      {Fruit-image-classifier using convolutional neural networks. -- ML.NET, ASP.NET Core [\href{https://github.com/maacpiash/Connery}{\underline{GitHub}} • \href{https://connery-api.herokuapp.com}{\underline{API (Swagger)}}}
     \resumeSubItem{MqFind}
-      {Node.js, TypeScript, React.js, Hapi.js, Webpack, Lerna, Docker Compose [\href{https://github.com/maacpiash/MqFind}{\underline{GitHub}} • \href{https://mqfind-api.herokuapp.com}{\underline{API}}] -- A full-stack web app that shows listings of accommodation near Macquarie University campuses.}
+      {A web app for querying, filtering, and listings of accommodation near Macquarie University campuses. -- Node.js, TypeScript, React.js, Hapi.js [\href{https://github.com/maacpiash/MqFind}{\underline{GitHub}} • \href{https://mqfind-api.herokuapp.com}{\underline{API}}]}
     \resumeSubItem{Vardict}
-      {Node.js, TypeScript [\href{https://github.com/maacpiash/vardict}{\underline{GitHub}} • \href{https://www.npmjs.com/package/vardict/}{\underline{NPM}}] -- A basic Node.js package for parsing labeled CLI arguments.}
+      {A basic Node.js package for parsing labeled CLI arguments. -- Node.js, TypeScript [\href{https://github.com/maacpiash/vardict}{\underline{GitHub}} • \href{https://www.npmjs.com/package/vardict/}{\underline{NPM}}]}
     \resumeSubItem{Winston}
-      {Cmake [\href{https://github.com/maacpiash/Winston}{\underline{GitHub}}] -- Implementation of neural networks from scratch, in C. \textit{WIP}.}
+      {Implementation of neural networks in C. \textit{WIP} -- Cmake [\href{https://github.com/maacpiash/Winston}{\underline{GitHub}}]}
   \resumeSubHeadingListEnd
 
 \end{document}
