@@ -14,7 +14,6 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage[ddmmmyyyy]{datetime}
 \usepackage[a4paper, margin=1in]{geometry}
 
 \pagestyle{fancy}
@@ -65,12 +64,6 @@
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
-
-\newcommand{\pubItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}\vspace{-3pt}
-  }
-}
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -153,7 +146,7 @@ Bangladeshi graduate student of data science, with professional experience in fu
     \resumeSubItem{Programming languages}
       {C\#, JavaScript (ES6), TypeScript, Python, C, Java, C++}
     \resumeSubItem{Web development}
-      {ASP.NET Core, Entity Framework Core, Blazor, Node.js, Express.js, Hapi.js, Angular, React.js, Webpack, ReST, GraphQL, Socket.IO, Microservices architecture}
+      {ASP.NET Core, Entity Framework Core, SignalR, Blazor, Node.js, Express.js, Hapi.js, React.js, Angular, Webpack, ReST, GraphQL, Socket.IO, Microservices architecture}
     \resumeSubItem{Machine learning \& data science}
       {Jupyter Notebook, Pandas, NLTK, Scikit-Learn, ML.NET}
     \resumeSubItem{Desktop app development}
@@ -162,17 +155,6 @@ Bangladeshi graduate student of data science, with professional experience in fu
       {MongoDB, MySQL, Microsoft SQL Server, PostgreSQL, SQLite, RethinkDB}
     \resumeSubItem{DevOps}
       {Docker, Heroku, Azure App Service, MongoDB Atlas, Travis CI, AppVeyor}
-  \resumeSubHeadingListEnd
-  
-  %-----------Publication-----------------
-\section{Publication}
-  \resumeSubHeadingListStart
-    \pubItem
-      {Selection of Most Suitable Secondary School Alternative by Multi-Criteria Fuzzy Analytic Hierarchy Process. [\href{https://link.springer.com/chapter/10.1007\%2F978-3-319-98678-4_29}{\underline{Springer/AISC, 2019}}]}
-    \pubItem
-      {Fruit Image Classification Using Convolutional Neural Networks. [\href{https://www.igi-global.com/gateway/article/236206}{\underline{IGI Global/IJSI, 2019}}]}
-    \pubItem
-      {Fusion of BWM and AHP MCDM Methods to Choose the Most Suitable Secondary School for an Individual in the Context of Bangladesh. [\href{https://www.worldscientific.com/doi/abs/10.1142/S2196888819500167}{\underline{World Scientific/VJCS, 2019}}]}
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
@@ -183,11 +165,24 @@ Bangladeshi graduate student of data science, with professional experience in fu
     \resumeSubItem{Connery}
       {Fruit-image-classifier using convolutional neural networks. -- ML.NET, ASP.NET Core [\href{https://github.com/maacpiash/Connery}{\underline{GitHub}} • \href{https://connery-api.herokuapp.com}{\underline{API (Swagger)}}}
     \resumeSubItem{MqFind}
-      {A web app for querying, filtering, and listings of accommodation near Macquarie University campuses. -- Node.js, TypeScript, React.js, Hapi.js [\href{https://github.com/maacpiash/MqFind}{\underline{GitHub}} • \href{https://mqfind-api.herokuapp.com}{\underline{API}}]}
+      {A web app for querying listings of accommodation near Macquarie University campuses. -- Node.js, TypeScript, React.js, Fluent UI, Hapi.js [\href{https://github.com/maacpiash/MqFind}{\underline{GitHub}} • \href{https://mqfind-api.herokuapp.com}{\underline{API}}]}
+    \resumeSubItem{AddLicenseHeader}
+      {A CLI tool that adds a license header on top of source files. -- .NET Core [\href{https://github.com/maacpiash/addlh}{\underline{GitHub}} • \href{https://www.nuget.org/packages/AddLicenseHeader}{\underline{NuGet package}}]}
     \resumeSubItem{Vardict}
-      {A basic Node.js package for parsing labeled CLI arguments. -- Node.js, TypeScript [\href{https://github.com/maacpiash/vardict}{\underline{GitHub}} • \href{https://www.npmjs.com/package/vardict/}{\underline{NPM}}]}
+      {A basic Node.js package for parsing labeled CLI arguments. -- Node.js, TypeScript [\href{https://github.com/maacpiash/vardict}{\underline{GitHub}} • \href{https://www.npmjs.com/package/vardict/}{\underline{NPM package}}]}
     \resumeSubItem{Winston}
       {Implementation of neural networks in C. \textit{WIP} -- Cmake [\href{https://github.com/maacpiash/Winston}{\underline{GitHub}}]}
+  \resumeSubHeadingListEnd
+  
+  %-----------Publication-----------------
+\section{Publication}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Conference paper}
+      {Selection of Most Suitable Secondary School Alternative by Multi-Criteria Fuzzy Analytic Hierarchy Process. [Presented at \href{https://missi.pwr.edu.pl/2018/}{\underline{MISSI 2018}}, published by \href{https://link.springer.com/chapter/10.1007\%2F978-3-319-98678-4_29}{\underline{Springer/AISC}}]}
+    \resumeSubItem{Journal paper}
+      {Fruit Image Classification Using Convolutional Neural Networks. [\href{https://www.igi-global.com/gateway/article/236206}{published by \underline{IGI Global/IJSI} in 2019}]}
+    \resumeSubItem{Journal paper}
+      {Fusion of BWM and AHP MCDM Methods to Choose the Most Suitable Secondary School for an Individual in the Context of Bangladesh. [published by \href{https://www.worldscientific.com/doi/abs/10.1142/S2196888819500167}{\underline{World Scientific/VJCS}} in 2019]}
   \resumeSubHeadingListEnd
 
 \end{document}
