@@ -5,7 +5,7 @@
 %-------------------------
 % Resume in Latex
 %------------------------
-\documentclass[letter-paper,10pt]{article}
+\documentclass[a4-paper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -24,7 +24,7 @@
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
-\lfoot{\vspace{5}Last updated on \today. Latest version of this document can be found at \href{https://pia.sh/resume}{\underline{pia.sh/resume}}}
+\lfoot{\vspace{5}Last updated on \today. The latest version of this document can be found at \href{https://pia.sh/resume}{\underline{pia.sh/resume}}}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
@@ -90,15 +90,18 @@
 
 %----------HEADING-----------------
 \begin{center}
-    \textbf{\Huge \scshape Mohammad Abdul Ahad Chowdhury} \\ \vspace{1pt}
-    \small \href{tel:+61482605155}{+61482605155} • \href{mailto:ahad@maacpiash.com}{ahad@maacpiash.com} •
-    \small \href{https://www.maacpiash.com}{www.maacpiash.com} • 
-    \small \href{https://linkedin.com/in/maacpiash}{linkedin.com/in/maacpiash} •
-    \small \href{https://github.com/maacpiash}{github.com/maacpiash}
+    \textbf{\Huge \scshape Mohammad Abdul Ahad Chowdhury} \\ \vspace{2pt}
+    \small
+    {
+        \href{tel:+61482605155}{+61482605155} • \href{mailto:ahad@maacpiash.com}{ahad@maacpiash.com} •
+        \href{https://www.maacpiash.com}{www.maacpiash.com} • 
+        \href{https://www.linkedin.com/in/maacpiash}{www.linkedin.com/in/maacpiash} •
+        \href{https://github.com/maacpiash}{github.com/maacpiash}
+    }
 \end{center}
 
 \section{Profile Summary}
-Bangladeshi graduate student of data science, with one year of professional experience in full-stack web development. Proficient in developing clound-native web applications (ASP.NET Core, MERN-stack) and machine learning solutions. Currently looking for a part-time, contract, or casual employment in the IT industry.
+Bangladeshi graduate student of data science, with one year of professional experience in full-stack web development. Proficient in developing cloud-native web applications (ASP.NET Core, MERN-stack) and machine learning solutions. Currently looking for a part-time, contract, or casual employment in the IT industry.
 
 
 %-----------EDUCATION-----------------
@@ -108,7 +111,7 @@ Bangladeshi graduate student of data science, with one year of professional expe
       {Macquarie University}{Sydney, NSW, Australia}
       {Master of Data Science}{February 2020 -- May 2022}
 
-      Coursework: \href{https://github.com/maacpiash/COMP6200}{Data Science}, \href{https://github.com/maacpiash/COMP6210}{Big Data}, \href{https://github.com/maacpiash/COMP8220}{Machine Learning}
+      Coursework: \href{https://github.com/maacpiash/COMP6200}{Data Science}, \href{https://github.com/maacpiash/COMP6210}{Big Data}, \href{https://github.com/maacpiash/COMP8220}{Machine Learning} [\href{https://github.com/maacpiash?tab=repositories&q=COMP}{\underline{Repositories on GitHub}}]
       
     \resumeSubheading
       {North South University}{Dhaka, Bangladesh}
@@ -116,6 +119,7 @@ Bangladeshi graduate student of data science, with one year of professional expe
       
       Capstone project: Fruit Image Classification Using Convolutional Neural Networks \\
       Coursework: \href{https://github.com/maacpiash/CSE440}{Artificial Intelligence}, \href{https://github.com/maacpiash/CSE470}{Theory of Fuzzy Systems}, \href{https://github.com/maacpiash/CSE327}{Software Engineering}, \href{https://github.com/maacpiash/CSE331}{Microprocessor Interfacing \& Embedded System}, \href{https://github.com/maacpiash/SpaceShooter}{Computer Graphics}
+      [\href{https://github.com/maacpiash?tab=repositories&q=CSE}{\underline{Repositories on GitHub}}]
   \resumeSubHeadingListEnd
 
 
@@ -127,9 +131,11 @@ Bangladeshi graduate student of data science, with one year of professional expe
       {Dynamic Solution Innovators Ltd.}{Dhaka, Bangladesh}
       {Junior Software Engineer}{February 2019 -- January 2020}
       
-      Full-time employment working on Node.js-based full-stack (React.js and Hapi.js) web applications: the \href{https://opencrvs.org}{\underline{OpenCRVS}} project, and the enterprise solution of \href{https://olwel.com}{\underline{Olwel}}, a healthcare startup. Agile methodology (scrum) was followed.
-      \newline
-      \textbf{Responsibilities}: Added features and components; fixed bugs; optimized API calls and database queries; wrote database migration scripts; wrote unit tests. [View the commits for OpenCRVS on GitHub \href{https://github.com/opencrvs/opencrvs-core/commits?author=maacpiash}{\underline{here}}]
+      Full-time employment working on Node.js-based full-stack web applications:  following agile methodology (scrum).
+      
+      \textbf{Projects}: The \href{https://opencrvs.org}{\underline{OpenCRVS}} project [\href{https://github.com/opencrvs/opencrvs-core/commits?author=maacpiash}{\underline{commits on GitHub}}]; the enterprise solution of \href{https://olwel.com}{\underline{Olwel}}, a healthcare startup.
+      
+      \textbf{Responsibilities}: Added components and bug-fixes to client-side software (React.js, Electron.js); added features, optimizations, and bug-fixes to server-side softwware (Hapi.js); optimized database queries and wrote database migration scripts (RethinkDB); wrote unit tests (Jest).
       
 % --------Multiple Positions Heading------------
 %    \resumeSubSubheading
@@ -146,8 +152,10 @@ Bangladeshi graduate student of data science, with one year of professional expe
       {Research Assistant}{November 2016 -- April 2018}
       
       Part-time employment under the Department of Environmental Science and Management. (\href{http://www.ipsnews.net/2017/05/flying-green-in-bangladesh/}{\underline{relevant news article}})
-      \newline
-      \textbf{Responsibility}: Developed the front-end software (Windows Forms) of NODES, an airline management system.
+      
+      \textbf{Project}: NODES, an airline management system that uses linear optimization to maximize utilization of resources.
+      
+      \textbf{Responsibility}: Developed the front-end software (.NET Framework, Windows Forms) of NODES.
      
   \resumeSubHeadingListEnd
   
@@ -157,7 +165,7 @@ Bangladeshi graduate student of data science, with one year of professional expe
     \resumeSubItem{Programming languages}
       {C\#, JavaScript (ES6), TypeScript, Python, C, Java, C++, R}
     \resumeSubItem{Web development}
-      {ASP.NET Core, Entity Framework Core, SignalR, Blazor, Node.js, Express.js, Hapi.js, Nest.js, React.js, Next.js, Vue.js, Angular (2+), Webpack, PWA, ReST, GraphQL, Socket.IO, Microservices architecture}
+      {ASP.NET Core, Entity Framework Core, Razor, Blazor, SignalR, Node.js, Express.js, Hapi.js, Nest.js, React.js, Next.js, Gatsby.js, Vue.js, Angular (2+), Webpack, PWA, ReST, GraphQL, Socket.IO, Microservices architecture}
     \resumeSubItem{Machine learning \& data science}
       {Jupyter Notebook, NumPy, Pandas, NLTK, Scikit-Learn, ML.NET}
     \resumeSubItem{Desktop app development}
@@ -165,7 +173,7 @@ Bangladeshi graduate student of data science, with one year of professional expe
     \resumeSubItem{Database systems}
       {MongoDB, MySQL, Microsoft SQL Server, PostgreSQL, SQLite, RethinkDB}
     \resumeSubItem{DevOps}
-      {Docker, Heroku, Azure App Service, MongoDB Atlas, basic CI/CD}
+      {Docker, Heroku, Netlify, Azure App Service, SSH, VPS services (e.g. Linode), MongoDB Atlas, basic CI/CD}
   \resumeSubHeadingListEnd
 
 \vspace{-3pt}
@@ -181,8 +189,8 @@ Bangladeshi graduate student of data science, with one year of professional expe
       {A CLI tool that adds a license header on top of source files. -- .NET Core [\href{https://github.com/maacpiash/addlh}{\underline{GitHub}} • \href{https://www.nuget.org/packages/AddLicenseHeader}{\underline{NuGet package}}]}
     \resumeSubItem{Vardict}
       {A basic Node.js package for parsing labeled CLI arguments. -- Node.js, TypeScript [\href{https://github.com/maacpiash/vardict}{\underline{GitHub}} • \href{https://www.npmjs.com/package/vardict/}{\underline{NPM package}}]}
-    \resumeSubItem{Prospect}
-      {An app for reading the latest posts from popular coding blogs. \textit{WIP} -- Node.js, TypeScript, React.js, Next.js, Nest.js, PostgreSQL, GraphQL, Docker [\href{https://github.com/maacpiash/Prospect}{\underline{GitHub}}]}
+    \resumeSubItem{Winston}
+      {Implementation of neural networks, from scratch. WIP. -- C, Cmake [\href{https://github.com/maacpiash/Winston}{\underline{GitHub}}]}
   \resumeSubHeadingListEnd
   
 \vspace{-3pt}
@@ -191,13 +199,13 @@ Bangladeshi graduate student of data science, with one year of professional expe
 \section{Publication}
   \resumeSubHeadingListStart
     \resumeItemWithoutHeading
-      {Rahman, N. S. M. R., \textbf{Chowdhury, M. A. A.}, Siraj, A.-A. N., Rahman, R. M., Karim, R., \& Alam, K. M. A. (2018). \textbf{Selection of Most Suitable Secondary School Alternative by Multi-Criteria Fuzzy Analytic Hierarchy Process.}  In: Choroś K., Kopel M., Kukla E., Siemiński A. (eds) Multimedia and Network Information Systems, 279-289. MISSI 2018. Advances in Intelligent Systems and Computing, vol 833. Springer, Cham. \href{https://link.springer.com/chapter/10.1007\%2F978-3-319-98678-4_29}{https://doi.org/10.1007/978-3-319-98678-4\_29}}
+      {Selection of Most Suitable Secondary School Alternative by Multi-Criteria Fuzzy Analytic Hierarchy Process. \href{https://link.springer.com/chapter/10.1007\%2F978-3-319-98678-4_29}{https://doi.org/10.1007/978-3-319-98678-4\_29}} [Slide presentation: \href{https://youtu.be/lztxu5F9Sxg}{youtu.be/lztxu5F9Sxg}]
 
     \resumeItemWithoutHeading
-      {Ashraf, S., Kadery, I., \textbf{Chowdhury, M. A. A.}, Mahbub, T. Z., \& Rahman, R. M. (2019). \textbf{Fruit Image Classification Using Convolutional Neural Networks.} International Journal of Software Innovation, 7(4), 51–70. \href{https://www.igi-global.com/gateway/article/236206}{https://doi.org/10.4018/ijsi.2019100103}}
+      {Fruit Image Classification Using Convolutional Neural Networks. \href{https://www.igi-global.com/gateway/article/236206}{https://doi.org/10.4018/ijsi.2019100103}}
       
     \resumeItemWithoutHeading
-      {Rahman, N. S. M. R., \textbf{Chowdhury, M. A. A.}, Firoze, A., \& Rahman, R. M. (2019). \textbf{Fusion of BWM and AHP MCDM Methods to Choose the Most Suitable Secondary School for an Individual in the Context of Bangladesh.} Vietnam Journal of Computer Science, 06(03), 311–328. \href{https://www.worldscientific.com/doi/abs/10.1142/S2196888819500167}{https://doi.org/10.1142/s2196888819500167}}
+      {Fusion of BWM and AHP MCDM Methods to Choose the Most Suitable Secondary School for an Individual in the Context of Bangladesh. \href{https://www.worldscientific.com/doi/abs/10.1142/S2196888819500167}{https://doi.org/10.1142/s2196888819500167}}
   \resumeSubHeadingListEnd
 
 \end{document}
