@@ -10,6 +10,8 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: ahad-resume-2024.tex
+      - name: Generate a release tag
+        run: echo "::set-output name=release_tag::ahad_resume_$(date +"%Y.%m.%d")"
       - name: Release PDF file
         uses: softprops/action-gh-release@v1
         with:
