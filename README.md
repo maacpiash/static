@@ -1,0 +1,2 @@
+[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/maacpiash/static/publish.yml?branch=trunk&style=for-the-badge&logo=latex&label=Publish%20action)](https://github.com/maacpiash/static/actions)
+[![GitHub Release](https://img.shields.io/github/v/release/maacpiash/static?style=for-the-badge&logo=github&label=Latest%20release)](https://github.com/maacpiash/static/releases/latest)
