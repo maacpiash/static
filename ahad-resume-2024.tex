@@ -24,7 +24,7 @@
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
 \usepackage[margin=3cm]{geometry}
-
+\usepackage[ddmmyyyy]{datetime}
 
 \usepackage{tikz}
 
@@ -67,7 +67,7 @@
 
 % \renewcommand{\headrulewidth}{0pt} % no line in header area
 % \fancyfoot{} % clear all footer fields
-\fancyfoot[RE,LO]{\footnotesize Last edited on \today. The latest version of this document is available at \href{https://pia.sh/resume}{\underline{pia.sh/resume} \ExternalLink}.}
+\fancyfoot[LO]{\footnotesize Last edited on \today. The latest version of this document is available at \href{https://pia.sh/resume}{pia.sh/resume \ExternalLink}.}
 
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -172,14 +172,13 @@
 %         \vspace*{2.0\multicolsep}
 %     %\resumeSubHeadingListEnd
 
-
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
       {Software Engineer}{20 April 2021 -- 10 May 2022}
-      {\href{https://www.apollointl.com.au}{Apollo International}}{Sydney, NSW, Australia}
+      {\href{https://www.apollointl.com.au}{Apollo International \ExternalLink} }{Sydney, NSW, Australia}
       \\ \vspace{8pt} Part-time employment for developing the in-house CRM solution. \vspace{-4pt}
       \\ \vspace{6pt} Responsibilities: \vspace{-6pt}
       \resumeItemListStart
@@ -192,15 +191,16 @@
 
     \resumeSubheading
       {Junior Software Engineer}{1 February 2019 -- 31 January 2020}
-      {\href{https://www.dsinnovators.com}{Dynamic Solution Innovators Ltd.}}{Dhaka, Bangladesh}
-      \\ \vspace{8pt} Full-time employment for developing enterprise web applications, following agile (scrum) methodology. \vspace{-4pt}
-      \\ \vspace{6pt}
-      Projects: \vspace{-4pt}
+      {\href{https://www.dsinnovators.com}{Dynamic Solution Innovators Ltd. \ExternalLink}}{Dhaka, Bangladesh}
+      \\ \vspace{8pt} Full-time employment for developing enterprise web applications, following agile (scrum) methodology.
+      \\ \vspace{2pt}
+      Projects:
+      \vspace{-4pt}
       \resumeItemListStart
       \resumeItem{The \href{https://www.opencrvs.org}{\underline{OpenCRVS}} project (\href{https://www.dsinnovators.com/casestudies/open-crvs-2}{\href{https://www.dsinnovators.com/projects/open-crvs}{\underline{project details}}, \underline{technical details}}, \href{https://github.com/opencrvs/opencrvs-core/commits?author=maacpiash}{\underline{commits}}).}
       \resumeItem{The full-stack solution for \href{https://www.olwel.com}{\underline{Olwel}}, a healthcare startup (\href{https://www.dsinnovators.com/projects/olwel}{\underline{project details}}, \href{https://www.dsinnovators.com/casestudies/olwel-2}{\underline{technical details}}).}
       \resumeItemListEnd
-      \vspace{-1pt}
+      \vspace{1pt}
       Responsibilities: \vspace{-6pt}
       \resumeItemListStart
         \resumeItem{Development of features and bug-fixes for the frontend projects with React.js, Electron.js, Redux.js, Material UI, Formik etc.}
@@ -217,18 +217,17 @@
     
   \resumeSubHeadingListEnd
 
-
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Master of Data Science}{9 October 2023 -- 20 September 2024}
-      {\href{https://spi.nsw.edu.au}{Sydney Polytechnic Institute} $|$ WAM: 74.84\%}{Sydney, NSW, Australia}
+      {\href{https://spi.nsw.edu.au}{Sydney Polytechnic Institute \ExternalLink} $|$ WAM: 74.84\%}{Sydney, NSW, Australia}
       \item Capstone project: Credit Card Fraud Detection Using Deep Learning and Big Data Analytics.
       \\ Notable Coursework: Machine Learning and Data Mining, Data Visualisation and Tools, Natural Language Processing and Applications, Big Data Infrastructure and Processing, Artificial Intelligence and Innovation.
     \resumeSubheading
       {Bachelor of Science in Computer Science \& Engineering}{January 2014 -- August 2018}
-      {\href{https://www.northsouth.edu}{North South University} $|$ CGPA: 2.98/4.00}{Dhaka, Bangladesh}
+      {\href{https://www.northsouth.edu}{North South University \ExternalLink} $|$ CGPA: 2.98/4.00}{Dhaka, Bangladesh}
       \item Capstone project: Fruit Image Classification Using Convolutional Neural Networks.
       \\ Notable Coursework: Software Engineering, Compiler Construction, Artificial Intelligence, Theory of Fuzzy Systems (\href{https://github.com/maacpiash?tab=repositories&q=CSE}{\underline{Repositories on GitHub}}).
   \resumeSubHeadingListEnd
