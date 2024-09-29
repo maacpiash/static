@@ -23,7 +23,9 @@
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
-\usepackage[margin=2cm]{geometry}
+\usepackage[margin=2cm,footskip=0.75cm]{geometry}
+\usepackage{lastpage}
+% \usepackage[UKenglish]{isodate}
 \usepackage[ddmmyyyy]{datetime}
 
 \usepackage{tikz}
@@ -60,14 +62,14 @@
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
 
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 
 % \renewcommand{\headrulewidth}{0pt} % no line in header area
 % \fancyfoot{} % clear all footer fields
-\fancyfoot[LO]{\footnotesize Last edited on \today. The latest version of this document is available at \href{https://pia.sh/resume}{pia.sh/resume \ExternalLink}.}
+\fancyfoot[LO,LE]{\footnotesize Last edit: \today. The latest version of this document is available at \href{https://pia.sh/resume}{\underline{pia.sh/resume} \ExternalLink}.}
+\fancyfoot[RO,RE]{\footnotesize \color{lightgray}\textit{\small page \thepage{} of \pageref*{LastPage}}}
 
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -126,9 +128,9 @@
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]\itemsep0.75em}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\itemsep0.2em}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -138,31 +140,14 @@
 \begin{document}
 
 \begin{center}
-  {\Huge \scshape Mohammad Abdul Ahad Chowdhury} \\ \vspace{2pt}
-  Full-Stack Web Developer • Machine Learning and Big Data Enthusiast \\ \vspace{2pt}
+  {\Huge \scshape Mohammad Abdul Ahad Chowdhury} \\ \vspace{5pt}
+  Full-Stack Web Developer • Machine Learning and Big Data Enthusiast \\ \vspace{5pt}
   \small \href{mailto:ahad@maacpiash.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{ahad@maacpiash.com}} ~ \href{https://www.maacpiash.com}{\raisebox{-0.2\height}\faGlobe\ \underline{www.maacpiash.com}} ~ 
   \href{https://linkedin.com/in/maacpiash}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/maacpiash}}  ~
   \href{https://github.com/maacpiash}{\raisebox{-0.2\height}\faGithub\ \underline{maacpiash}}
-  \vspace{-8pt}
+  \vspace{-5pt}
 \end{center}
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Master of Data Science}{Graduated in September 2024}
-      {\href{https://spi.nsw.edu.au}{Sydney Polytechnic Institute \ExternalLink}}{Sydney, NSW, Australia}
-      \\ \vspace{0.75em} WAM: 74.84\%.
-      \\ Capstone project: Investigation for Identification of the Most Effective Machine Learning
-      Method for Credit Card Fraud Detection.
-      % \\ Notable Coursework: Machine Learning and Data Mining, Data Visualisation and Tools, Natural Language Processing and Applications, Big Data Infrastructure and Processing, Artificial Intelligence and Innovation.
-    \resumeSubheading
-      {Bachelor of Science in Computer Science \& Engineering}{Graduated in Aug. 2018}
-      {\href{https://www.northsouth.edu}{North South University \ExternalLink}}{Dhaka, Bangladesh}
-      \\ \vspace{0.75em} CGPA: 2.98/4.00.
-      \\ Capstone project: Fruit Image Classification Using Convolutional Neural Networks (\href{https://www.igi-global.com/gateway/article/236206}{\underline{Publication} \ExternalLink}).
-      % \\ Notable Coursework: Software Engineering, Compiler Construction, Artificial Intelligence, Theory of Fuzzy Systems (\href{https://github.com/maacpiash?tab=repositories&q=CSE}{\underline{Repositories on GitHub}}).
-  \resumeSubHeadingListEnd
 
 % %------RELEVANT COURSEWORK-------
 % \section{Relevant Coursework}
@@ -182,6 +167,25 @@
 %         \vspace*{2.0\multicolsep}
 %     %\resumeSubHeadingListEnd
 
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Master of Data Science}{Graduating in October 2024}
+      {\href{https://spi.nsw.edu.au}{Sydney Polytechnic Institute \ExternalLink}}{Sydney, NSW, Australia}
+      \\ \vspace{0.75em} WAM: 84.84\%.
+      \\ Capstone project: Investigation for Identification of the Most Effective Machine Learning
+      Method for Credit Card Fraud Detection.
+      % \\ Notable Coursework: Machine Learning and Data Mining, Data Visualisation and Tools, Natural Language Processing and Applications, Big Data Infrastructure and Processing, Artificial Intelligence and Innovation.
+    \resumeSubheading
+      {Bachelor of Science in Computer Science \& Engineering}{Graduated in Aug. 2018}
+      {\href{https://www.northsouth.edu}{North South University \ExternalLink}}{Dhaka, Bangladesh}
+      \\ \vspace{0.75em} CGPA: 2.98/4.00.
+      \\ Capstone project: Fruit Image Classification Using Convolutional Neural Networks (\href{https://www.igi-global.com/gateway/article/236206}{\underline{Publication} \ExternalLink}).
+      % \\ Notable Coursework: Software Engineering, Compiler Construction, Artificial Intelligence, Theory of Fuzzy Systems (\href{https://github.com/maacpiash?tab=repositories&q=CSE}{\underline{Repositories on GitHub}}).
+  \resumeSubHeadingListEnd
+
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
@@ -192,31 +196,59 @@
       \\ \vspace{8pt} Part-time employment for developing the in-house CRM solution. \vspace{-4pt}
       \\ \vspace{6pt} Responsibilities: \vspace{-6pt}
       \resumeItemListStart
-        \resumeItem{Development of the frontend project with React.js, Redux.js,  Next.js, Material UI etc.}
-        \resumeItem{Development of the backend project with ASP.NET Core, EF Core, PostgreSQL, Redis etc.}
-        \resumeItem{Testing both projects with xUnit, Jest, RTL, and Playwright.}
-        \resumeItem{Integration and deployment of the solution on a VPS instance using SSH, Nginx, PM2 etc.}
+        \resumeItem{Collaborated closely with directors and both onshore and offshore teams to align business requirements and CRM system features with organisational goals.}
+        \resumeItem{Completed the development of a high-performance frontend application using modern libraries and frameworks such as TypeScript, React.js, Redux.js, Next.js, Material UI, and Storybook.}
+        \resumeItem{Architected and implemented a robust backend solution, including a user authentication service, utilising ASP.NET Core and Entity Framework Core.}
+        \resumeItem{Managed relational and in-memory databases, leveraging PostgreSQL for persistent storage of relational entities and Redis for in-memory response caching and fast data access for user authentication to ensure high availability and quick response times.}
+        \resumeItem{Integrated into the CRM various third-party systems, including lead collection from website contact forms and Facebook (Meta) Ads, to streamline marketing efforts.}
+        \resumeItem{Conducted rigorous frontend testing with Jest, React Testing Library (RTL), and Playwright, ensuring high-quality, bug-free deliverables.}
+        \resumeItem{Performed backend testing using xUnit and Moq to maintain code integrity and reliability.}
+        \resumeItem{Deployed applications to VPS environments, managing configurations of Nginx, PM2, and Certbot, and facilitated secure and stable deployments through SSH.}
+        \resumeItem{Provided regular progress updates and strategic insights to the General Manager, ensuring alignment with organizational objectives and technical feasibility.}
+        \resumeItem{Collaborated with cross-functional teams to identify CRM software enhancements and website improvements, delivering solutions that supported operational efficiency.}
+        \resumeItem{Authored comprehensive end-user documentation, detailing operational procedures and system functionalities for seamless adoption by business users.}
+        \resumeItem{Delivered ongoing maintenance, technical support, and system updates to ensure platform stability and address evolving business needs.}
+        \resumeItem{Proposed and implemented continuous improvement initiatives to optimise system performance and expand functionalities.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Junior Software Engineer}{1 February 2019 -- 31 January 2020}
       {\href{https://www.dsinnovators.com}{Dynamic Solution Innovators Ltd. \ExternalLink}}{Dhaka, Bangladesh}
-      \\ \vspace{8pt} Full-time employment for developing enterprise web applications, following agile (scrum) methodology.
-      \\ \vspace{2pt}
+      \\ \vspace{8pt} Full-time employment developing enterprise web applications, following agile (scrum) workflow. \vspace{1pt}\\
+      % \\ \vspace{6pt}
       Projects:
+      % The \href{https://www.opencrvs.org}{\underline{OpenCRVS} \ExternalLink} project (\href{https://www.dsinnovators.com/projects/open-crvs}{\underline{project details} \ExternalLink}, \href{https://www.dsinnovators.com/casestudies/open-crvs-2}{\underline{technical details} \ExternalLink}, \href{https://github.com/opencrvs/opencrvs-core/commits?author=maacpiash}{\underline{commits} \ExternalLink}) and the full-stack solution for \href{https://www.olwel.com}{\underline{Olwel} \ExternalLink}, a healthcare startup (\href{https://www.dsinnovators.com/projects/olwel}{\underline{project details} \ExternalLink}, \href{https://www.dsinnovators.com/casestudies/olwel-2}{\underline{technical details} \ExternalLink}).\\
       \vspace{-4pt}
       \resumeItemListStart
-      \resumeItem{The \href{https://www.opencrvs.org}{\underline{OpenCRVS}} project (\href{https://www.dsinnovators.com/casestudies/open-crvs-2}{\href{https://www.dsinnovators.com/projects/open-crvs}{\underline{project details}}, \underline{technical details}}, \href{https://github.com/opencrvs/opencrvs-core/commits?author=maacpiash}{\underline{commits}}).}
-      \resumeItem{The full-stack solution for \href{https://www.olwel.com}{\underline{Olwel}}, a healthcare startup (\href{https://www.dsinnovators.com/projects/olwel}{\underline{project details}}, \href{https://www.dsinnovators.com/casestudies/olwel-2}{\underline{technical details}}).}
+      \resumeItem{\href{https://www.opencrvs.org}{\underline{OpenCRVS}}, a solution for civil registration and vital statistics, backed by Plan International and the government of Bangladesh. (\href{https://www.dsinnovators.com/casestudies/open-crvs-2}{\href{https://www.dsinnovators.com/projects/open-crvs}{\underline{project details}}, \underline{technical details}}).}
+      \resumeItem{The full-stack solution for \href{https://www.olwel.com}{\underline{Olwel}}, a Finland-based healthcare startup providing telemedicine and at-home medical care services. (\href{https://www.dsinnovators.com/projects/olwel}{\underline{project details}}, \href{https://www.dsinnovators.com/casestudies/olwel-2}{\underline{technical details}}).}
       \resumeItemListEnd
       \vspace{1pt}
       Responsibilities: \vspace{-6pt}
-      \resumeItemListStart
-        \resumeItem{Development of features for the frontend projects with React.js, Electron.js, Redux.js etc.}
-        \resumeItem{Development of features and optimizations for the backend projects with Node.js, Hapi.js, MongoDB, ElasticSearch, GraphQL, Socket.io, Docker, AWS S3 etc.}
-        \resumeItem{Optimization of RethinkDB queries and database migration scripts.}
-        \resumeItem{Composition of unit and end-to-end tests with Jest, Enzyme, Mocha, and Cypress.}
-    \resumeItemListEnd
+      \begin{itemize}
+      \itemsep0.2em
+        \resumeItem{\textit{OpenCRVS:}}
+        \begin{itemize}
+          \resumeItem{Engineered key frontend features utilizing TypeScript, React.js, Redux.js, and Formik to deliver a responsive and user-friendly interface.}
+          \resumeItem{Developed scalable backend services using TypeScript, Node.js, Hapi.js, MongoDB, GraphQL, and Socket.io, ensuring seamless data handling and real-time communication.}
+          \resumeItem{Containerized applications with Docker to streamline development and deployment workflows.}
+          \resumeItem{Ensured code reliability through extensive unit testing with Jest and end-to-end testing with Cypress.}
+          \resumeItem{Refactored existing code to achieve target code coverage, improving maintainability and performance.}
+          \resumeItem{Collaborated with the scrum master and team members during sprint planning and daily stand-ups, aligning on goals and progress.}
+        \end{itemize}
+        \href{https://github.com/opencrvs/opencrvs-core/commits?author=maacpiash}{(\underline{commits on GitHub} \ExternalLink)}
+        \resumeItem{\textit{Olwel:}}
+        \begin{itemize}
+          \resumeItem{Spearheaded frontend development using React.js, Redux.js, Electron.js, and Material UI, delivering intuitive interfaces for desktop applications.}
+          \resumeItem{Optimized backend services using Node.js, Hapi.js, RethinkDB, and AWS S3, significantly improving system efficiency and performance.}
+          \resumeItem{Achieved query optimization gains of 20\%-50\%, reducing overall load times and enhancing user experience.}
+          \resumeItem{Wrote comprehensive unit tests with Mocha to ensure reliability and stability.}
+          \resumeItem{Developed database migration scripts to anonymize patient data for compliance with research requirements.}
+          \resumeItem{Led dependency upgrades across the codebase, ensuring smooth transitions while preserving system stability.}
+          \resumeItem{Innovated and executed new projects, including a medical prescription app for doctors, further expanding the platform's feature set.}
+          \resumeItem{Regularly reported development progress and technical decisions to the CTO and business stakeholders, ensuring alignment with business objectives and timelines.}
+        \end{itemize}
+    \end{itemize}\vspace{-5pt}
 
     % \resumeSubheading
     %   {Research Assistant}{1 November 2016 -- 30 April 2018}
@@ -226,59 +258,70 @@
     
   \resumeSubHeadingListEnd
 
-
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0in, label={}]
     \item{
-     \textbf{Languages}{: C\#, JavaScript, TypeScript, Python, SQL, C, R.} \\
-     \textbf{Backend}{: ASP.NET Core, Entity Framework Core, SignalR, Node.js, Express.js, Auth.js.} \\
-     \textbf{Frontend}{: Tailwind CSS, React.js, Redux.js, Next.js, Svelte, Astro, Blazor, PWA.} \\
-     \textbf{Database}{: MySQL, PostgreSQL, SQL Server, MongoDB, Redis, SQLite, SurrealDB.} \\
-     \textbf{ML and Big Data}{: Scikit-learn, Tensorflow/Keras, Apache Spark, Apache Hadoop.} \\
-     \textbf{DevOps}{: Docker, CI/CD, AWS (S3, EC2, ELB, Lambda, SQS, SNS, RDS, DynamoDB).} \\
+     \textbf{Languages:}{ C\#, JavaScript, TypeScript, Python, SQL, C, R.} \\
+     \textbf{Backend:}{ ASP.NET Core, Entity Framework Core, SignalR, Node.js, Express.js, Auth.js.} \\
+     \textbf{Frontend:}{: Tailwind CSS, React.js, Redux.js, Next.js, Svelte, Astro, Blazor, PWA.} \\
+     \textbf{Database:}{ MySQL, PostgreSQL, SQL Server, MongoDB, Redis, SQLite.} \\
+     \textbf{Machine Learning:}{ Numpy, Pandas, Scikit-learn, Tensorflow/Keras.} \\
+     \textbf{Big Data:}{ Apache Hadoop (HDFS, MapReduce, YARN), Apache Spark.}\\
+     \textbf{DevOps:}{ Docker, CI/CD, SSH, Nginx.} \\
+     \textbf{Platforms: }{AWS, Azure App Service, Vercel, Heroku.}
     }
  \end{itemize}
- \vspace{-16pt}
+ 
+% %-----------PROFESSIONAL CERTIFICATIONS-----------
+% \section{Certifications}
+%   \resumeSubHeadingListStart
+%   \resumeProjectHeading
+%     {\textbf{AWS Certified Solutions Architect} $|$ \emph{Associate}}{SAA-C03}
+%         % \begin{multicols}{2}
+%             \begin{itemize}[itemsep=0em, parsep=3pt]
+%                 \item Date of certification: 16 October 2024
+%                 \item Date of expiration: 15 October 2027
+%             \end{itemize}
+%         % \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%   \resumeSubHeadingListEnd
+% \vspace{0.25pt}
 
-%-----------PROJECTS-----------
+% % -----------PROJECTS-----------
 % \section{Projects}
 %   \resumeSubHeadingListStart
 %     \resumeProjectHeading
-%       {\textbf{KonSchool} $|$ \emph{Web application, Recommendation system}}{Hosted on \href{https://konschool.azurewebsite.net}{\underline{Azure}} $|$ GitHub: \href{https://github.com/maacpiash/KonSchool}{\underline{KonSchool}}}
+%       {\textbf{KonSchool} $|$ \emph{Recommendation system} $|$ \texttt{Blazor, MongoDB}}{\href{https://konschool.azurewebsite.net}{\underline{Azure} \ExternalLink} $|$ GitHub: \href{https://github.com/maacpiash/KonSchool}{\underline{KonSchool} \ExternalLink}}
 %       \resumeItemListStart
 %         \resumeItem{Fuzzy-AHP-based recommendation system for secondary schools in Bangladesh.}
-%         \resumeItem{Tech stack: ASP.NET Core, MongoDB, xUnit, Moq.}
 %         \resumeItem{Status: completed, with unit and e2e tests at 95\% coverage.}
-%         \resumeItem{Another version is in development, with separate web APIs and a frontend developed with Blazor.}
+%         % \resumeItem{Another version is in development, with separate web APIs and a frontend developed with Blazor.}
 %       \resumeItemListEnd
 %       \vspace{-8pt}
 %     \resumeProjectHeading
-%       {\textbf{Connery} $|$ \emph{Web application, Deep learning}}{GitHub: \href{https://github.com/maacpiash/Connery}{\underline{Connery}}}
+%       {\textbf{Connery} $|$ \emph{Deep learning} $|$ \texttt{ML.NET, ASP.NET Core}}{GitHub: \href{https://github.com/maacpiash/Connery}{\underline{Connery} \ExternalLink}}
 %       \resumeItemListStart
 %         \resumeItem{Fruit image classifier using convolutional neural networks.}
-%         \resumeItem{Tech stack: ML.NET, ASP.NET Core.}
 %         \resumeItem{Status: complete, offline.}
 %       \resumeItemListEnd
 %       \vspace{-8pt}
 %     \resumeProjectHeading
-%       {\textbf{Winston} $|$ \emph{Machine learning, Deep learning}}{GitHub: \href{https://github.com/maacpiash/Winston}{\underline{Winston}}}
+%       {\textbf{Winston} $|$ \emph{Machine learning} $|$ \texttt{C, CMake, vcpkg}}{GitHub: \href{https://github.com/maacpiash/Winston}{\underline{Winston} \ExternalLink}}
 %       \resumeItemListStart
 %         \resumeItem{Implementation of neural networks from scratch.}
-%         \resumeItem{Tech stack: C, CMake.}
 %         \resumeItem{Status: in progress.}
 %       \resumeItemListEnd
 %       \vspace{-8pt}
 %     \resumeProjectHeading
-%       {\textbf{Vardict} $|$ \emph{Library, Package}}{\href{https://www.npmjs.com/package/vardict}{\underline{NPM package}} $|$ GitHub: \href{https://github.com/maacpiash/Vardict}{\underline{Vardict}}}
+%       {\textbf{Vardict} $|$ \emph{Library, Package} $|$ \texttt{Node.js}}{\href{https://www.npmjs.com/package/vardict}{\underline{NPM package} \ExternalLink} $|$ GitHub: \href{https://github.com/maacpiash/Vardict}{\underline{Vardict} \ExternalLink}}
 %       \resumeItemListStart
 %         \resumeItem{CLI argument parser.}
-%         \resumeItem{Tech stack: Node.js.}
 %         \resumeItem{Status: completed.}
 %       \resumeItemListEnd
 %   \resumeSubHeadingListEnd
 
-%-----------Open Source Contributions-----------
+% % -----------Open Source Contributions-----------
 % \section{Open Source Contributions}
 %   \begin{itemize}[leftmargin=0.75cm]
 %     \item{\href{https://github.com/ubuntu-mate/ubuntu-mate.org/pull/141}{\underline{ubuntu-mate/ubuntu-mate.org\#141}}}
@@ -288,17 +331,17 @@
 %   \end{itemize}
 % \vspace{-16pt}
 
-%-----------Publications-----------
-% \section{Publications}
-%  \begin{itemize}[leftmargin=0in, label={}]
-%     \item{
-%       Rahman, N.S.M.R., \textbf{Chowdhury, M.A.A.}, Siraj, AA.N., Rahman, R.M., Karim, R., Alam, K.M.A. (2018). Selection of Most Suitable Secondary School Alternative by Multi-Criteria Fuzzy Analytic Hierarchy Process. Advances in Intelligent Systems and Computing, vol 833. Springer, Cham. \href{https://link.springer.com/chapter/10.1007/978-3-319-98678-4_29}{\underline{link}}}
-%     \item{
-%       Ashraf, S., Kadery, I., \textbf{Chowdhury, M.A.A.}, Mahbub, T.Z., Rahman, R.M. (2019). Fruit Image Classification by Convolutional Neural Networks. International Journal of Software Innovation (IJSI), Volume 7, Issue 4, Article 4. \href{https://www.igi-global.com/gateway/article/236206}{\underline{link}}}
-%     \item{
-%       Rahman, N.S.M.R., \textbf{Chowdhury, M.A.A.}, Firoze, A., Rahman, R.M. (2019). Fusion of BWM and AHP MCDM Methods to Choose the Most Suitable Secondary School for an Individual in Context of Bangladesh. \href{https://link.springer.com/chapter/10.1007/978-3-319-98678-4_29}{\underline{link}} \\
-%     }
-%  \end{itemize}
+% -----------Publications-----------
+\section{Publications}
+ \begin{itemize}[leftmargin=0em, label={}]
+    \item{
+      Rahman, N.S.M.R., \textbf{Chowdhury, M.A.A.}, Siraj, AA.N., Rahman, R.M., Karim, R., \& Alam, K.M.A. (2018). Selection of Most Suitable Secondary School Alternative by Multi-Criteria Fuzzy Analytic Hierarchy Process. \textit{Multimedia and Network Information Systems}, 279–289. doi:10.1007/978-3-319-98678-4\_29. \href{https://link.springer.com/chapter/10.1007/978-3-319-98678-4_29}{\underline{link} \ExternalLink}}
+    \item{
+      Ashraf, S., Kadery, I., \textbf{Chowdhury, M.A.A.}, Mahbub, T.Z., \& Rahman, R.M. (2019). Fruit Image Classification by Convolutional Neural Networks. \textit{International Journal of Software Innovation (IJSI), 7}(4), 51–70. doi:10.4018/ijsi.2019100103. \href{https://www.igi-global.com/gateway/article/236206}{\underline{link} \ExternalLink}}
+    \item{
+      Rahman, N.S.M.R., \textbf{Chowdhury, M.A.A.}, Firoze, A., \& Rahman, R.M. (2024). Fusion of BWM and AHP MCDM Methods to Choose the Most Suitable Secondary School for an Individual in Context of Bangladesh. \textit{Vietnam Journal of Computer Science, 06}(03), 311–328. doi:10.1142/s2196888819500167. \href{https://www.worldscientific.com/doi/abs/10.1142/S2196888819500167}{\underline{link}} \\
+    }
+ \end{itemize}
 
 %-----------References-----------
 \section{References}
