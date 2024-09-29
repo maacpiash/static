@@ -70,7 +70,7 @@
 
 % \renewcommand{\headrulewidth}{0pt} % no line in header area
 % \fancyfoot{} % clear all footer fields
-\fancyfoot[LO,LE]{\footnotesize Last edit: \today. The latest version of this document is available at \href{https://pia.sh/resume}{\underline{pia.sh/resume} \ExternalLink}.}
+\fancyfoot[LO,LE]{\footnotesize \color{lightgray} The latest version of this document is available at \href{https://pia.sh/resume}{\underline{pia.sh/resume} \ExternalLink}.}
 \fancyfoot[RO,RE]{\footnotesize \color{lightgray}\textit{\small page \thepage{} of \pageref*{LastPage}}}
 
 \renewcommand{\headrulewidth}{0pt}
@@ -147,7 +147,7 @@
   \small \href{mailto:ahad@maacpiash.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{ahad@maacpiash.com}} ~ \href{https://www.maacpiash.com}{\raisebox{-0.2\height}\faGlobe\ \underline{www.maacpiash.com}} ~ 
   \href{https://linkedin.com/in/maacpiash}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/maacpiash}}  ~
   \href{https://github.com/maacpiash}{\raisebox{-0.2\height}\faGithub\ \underline{maacpiash}}
-  \vspace{-5pt}
+  \vspace{5pt}
 \end{center}
 
 
@@ -169,22 +169,24 @@
 %         \vspace*{2.0\multicolsep}
 %     %\resumeSubHeadingListEnd
 
+A full-stack developer experienced in React.js, Node.js, ASP.NET Core, and machine learning. Made contributions to projects in civil registration, healthcare, and CRM systems. Skills include database management, cloud platforms such as AWS, and DevOps. Completed a Master of Data Science degree and pursuing AWS Solutions Architect certification.
+
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Master of Data Science}{Graduating in October 2024}
-      {\href{https://spi.nsw.edu.au}{Sydney Polytechnic Institute \ExternalLink}}{Sydney, NSW, Australia}
-      \\ \vspace{0.75em} WAM: 84.84\%.
-      \\ Capstone project: Investigation for Identification of the Most Effective Machine Learning
+      {Master of Data Science}{Aug 2023 -- September 2024}
+      {Sydney Polytechnic Institute}{Sydney, NSW, Australia}
+      % \\ \vspace{0.75em} WAM: 84.84\%.
+      \item Capstone project: Investigation for Identification of the Most Effective Machine Learning
       Method for Credit Card Fraud Detection.
       % \\ Notable Coursework: Machine Learning and Data Mining, Data Visualisation and Tools, Natural Language Processing and Applications, Big Data Infrastructure and Processing, Artificial Intelligence and Innovation.
     \resumeSubheading
-      {Bachelor of Science in Computer Science \& Engineering}{Graduated in Aug. 2018}
-      {\href{https://www.northsouth.edu}{North South University \ExternalLink}}{Dhaka, Bangladesh}
-      \\ \vspace{0.75em} CGPA: 2.98/4.00.
-      \\ Capstone project: Fruit Image Classification Using Convolutional Neural Networks (\href{https://www.igi-global.com/gateway/article/236206}{\underline{Publication} \ExternalLink}).
+      {Bachelor of Science in Computer Science \& Eng.}{January 2014 -- August 2018}
+      {North South University}{Dhaka, Bangladesh}
+      \\ \vspace{1em} % CGPA: 2.98/4.00.
+      Capstone project: Fruit Image Classification Using Convolutional Neural Networks (\href{https://www.igi-global.com/gateway/article/236206}{\underline{Publication} \ExternalLink}).
       % \\ Notable Coursework: Software Engineering, Compiler Construction, Artificial Intelligence, Theory of Fuzzy Systems (\href{https://github.com/maacpiash?tab=repositories&q=CSE}{\underline{Repositories on GitHub}}).
   \resumeSubHeadingListEnd
 
@@ -193,8 +195,8 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Software Engineer}{20 April 2021 -- 10 May 2022}
-      {\href{https://www.apollointl.com.au}{Apollo International \ExternalLink} }{Sydney, NSW, Australia}
+      {Software Engineer}{April 2021 -- May 2022}
+      {Apollo International}{Sydney, NSW, Australia}
       \\ \vspace{8pt} Part-time employment for developing the in-house CRM solution. \vspace{-4pt}
       \\ \vspace{6pt} Responsibilities: \vspace{-6pt}
       \resumeItemListStart
@@ -204,7 +206,7 @@
         \resumeItem{Managed relational and in-memory databases, leveraging PostgreSQL for persistent storage of relational entities and Redis for in-memory response caching and fast data access for user authentication to ensure high availability and quick response times.}
         \resumeItem{Integrated into the CRM various third-party systems, including lead collection from website contact forms and Facebook (Meta) Ads, to streamline marketing efforts.}
         \resumeItem{Conducted rigorous frontend testing with Jest, React Testing Library (RTL), and Playwright, ensuring high-quality, bug-free deliverables.}
-        \resumeItem{Performed backend testing using xUnit and Moq to maintain code integrity and reliability.}
+        \resumeItem{Performed backend testing using xUnit and Moq to maintain integrity and reliability.}
         \resumeItem{Deployed applications to VPS environments, managing configurations of Nginx, PM2, and Certbot, and facilitated secure and stable deployments through SSH.}
         \resumeItem{Provided regular progress updates and strategic insights to the General Manager, ensuring alignment with organizational objectives and technical feasibility.}
         \resumeItem{Collaborated with cross-functional teams to identify CRM software enhancements and website improvements, delivering solutions that supported operational efficiency.}
@@ -213,8 +215,10 @@
         \resumeItem{Proposed and implemented continuous improvement initiatives to optimise system performance and expand functionalities.}
       \resumeItemListEnd
 
+      \vspace{1.5em}
+
     \resumeSubheading
-      {Junior Software Engineer}{1 February 2019 -- 31 January 2020}
+      {Junior Software Engineer}{February 2019 -- January 2020}
       {\href{https://www.dsinnovators.com}{Dynamic Solution Innovators Ltd. \ExternalLink}}{Dhaka, Bangladesh}
       \\ \vspace{8pt} Full-time employment developing enterprise web applications, following agile (scrum) workflow. \vspace{1pt}\\
       % \\ \vspace{6pt}
@@ -231,14 +235,15 @@
       \itemsep0.2em
         \resumeItem{\textit{OpenCRVS:}}
         \begin{itemize}
-          \resumeItem{Engineered key frontend features utilizing TypeScript, React.js, Redux.js, and Formik to deliver a responsive and user-friendly interface.}
-          \resumeItem{Developed scalable backend services using TypeScript, Node.js, Hapi.js, MongoDB, GraphQL, and Socket.io, ensuring seamless data handling and real-time communication.}
-          \resumeItem{Containerized applications with Docker to streamline development and deployment workflows.}
-          \resumeItem{Ensured code reliability through extensive unit testing with Jest and end-to-end testing with Cypress.}
-          \resumeItem{Refactored existing code to achieve target code coverage, improving maintainability and performance.}
+          \resumeItem{Engineered key frontend features and bug-fixes utilizing TypeScript, React.js, Redux.js, and Formik to deliver a responsive and user-friendly interface.}
+          \resumeItem{Developed features and fixed bugs scalable backend services using TypeScript, Node.js, Hapi.js, MongoDB, GraphQL, and Docker, ensuring seamless server-side operations.}
+          \resumeItem{Ensured code reliability through extensive unit testing with Jest}
+          \resumeItem{Composed end-to-end tests with Cypress to guarantee predictable user experience.}
+          \resumeItem{Refactored code to achieve target code coverage, improving maintainability.}
           \resumeItem{Collaborated with the scrum master and team members during sprint planning and daily stand-ups, aligning on goals and progress.}
         \end{itemize}
         \href{https://github.com/opencrvs/opencrvs-core/commits?author=maacpiash}{(\underline{commits on GitHub} \ExternalLink)}
+        \vspace{5em}
         \resumeItem{\textit{Olwel:}}
         \begin{itemize}
           \resumeItem{Spearheaded frontend development using React.js, Redux.js, Electron.js, and Material UI, delivering intuitive interfaces for desktop applications.}
@@ -250,7 +255,7 @@
           \resumeItem{Innovated and executed new projects, including a medical prescription app for doctors, further expanding the platform's feature set.}
           \resumeItem{Regularly reported development progress and technical decisions to the CTO and business stakeholders, ensuring alignment with business objectives and timelines.}
         \end{itemize}
-    \end{itemize}\vspace{-5pt}
+    \end{itemize}
 
     % \resumeSubheading
     %   {Research Assistant}{1 November 2016 -- 30 April 2018}
@@ -266,7 +271,7 @@
     \item{
      \textbf{Languages:}{ C\#, JavaScript, TypeScript, Python, SQL, C, R.} \\
      \textbf{Backend:}{ ASP.NET Core, Entity Framework Core, SignalR, Node.js, Express.js, Auth.js.} \\
-     \textbf{Frontend:}{: Tailwind CSS, React.js, Redux.js, Next.js, Svelte, Astro, Blazor, PWA.} \\
+     \textbf{Frontend:}{ Tailwind CSS, React.js, Redux.js, Next.js, Svelte, Astro, Blazor, PWA.} \\
      \textbf{Database:}{ MySQL, PostgreSQL, SQL Server, MongoDB, Redis, SQLite.} \\
      \textbf{Machine Learning:}{ Numpy, Pandas, Scikit-learn, Tensorflow/Keras.} \\
      \textbf{Big Data:}{ Apache Hadoop (HDFS, MapReduce, YARN), Apache Spark.}\\
