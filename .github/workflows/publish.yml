@@ -2,7 +2,7 @@ name: Build LaTeX document
 on:
   push:
     tags:
-    - '^2024\.(0[1-9]|1[0-2])\.(0[1-9]|[12][0-9]|3[01])$'
+      - '^2025\.(0[1-9]|1[0-2])\.(0[1-9]|[12][0-9]|3[01])$'
     branches:
       - trunk
 jobs:
@@ -14,7 +14,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: ahad-resume-2024.tex
+          root_file: ahad-resume-2025.tex
       - name: Generate a release tag
         id: tag
         run: echo "::set-output name=release_tag::$(date +"%Y.%m.%d")"
@@ -22,4 +22,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ steps.tag.outputs.release_tag }}
-          files: ahad-resume-2024.pdf
+          files: ahad-resume-2025.pdf
