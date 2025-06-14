@@ -15,24 +15,20 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: ahad-resume-2025.tex
-      - name: Generate a filename with date
-        id: timestamp
+      - name: Generate shared timestamp
+        id: meta
         run: |
-          STAMP=$(TZ="Australia/Sydney" date +"%Y-%m-%d-%H%M")
-          echo "pdf_name=ahad-resume-$STAMP.pdf" >> "$GITHUB_OUTPUT"
+          TIMESTAMP=$(TZ="Australia/Sydney" date +"%Y.%m.%d.%H%M")
+          echo "release_tag=$TIMESTAMP" >> "$GITHUB_OUTPUT"
+          echo "pdf_name=ahad-resume-$TIMESTAMP.pdf" >> "$GITHUB_OUTPUT"
       - name: Rename compiled PDF
         run: |
-          mv ahad-resume-2025.pdf "${{ steps.timestamp.outputs.pdf_name }}"
-      - name: Generate a release tag
-        id: tag
-        run: |
-          TAG=$(TZ="Australia/Sydney" date +"%Y.%m.%d.%H%M")
-          echo "release_tag=$TAG" >> "$GITHUB_OUTPUT"
+          mv ahad-resume-2025.pdf "${{ steps.meta.outputs.pdf_name }}"
       - name: Release PDF file
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ steps.tag.outputs.release_tag }}
-          files: ${{ steps.timestamp.outputs.pdf_name }}
+          tag_name: ${{ steps.meta.outputs.release_tag }}
+          files: ${{ steps.meta.outputs.pdf_name }}
       - name: Update address for link shortener
         run: |
           curl -X POST "${{ secrets.PIASH_ADDRESS }}" \
@@ -40,5 +36,5 @@ jobs:
             -H "Content-Type: application/json" \
             -d '{
               "key": "resume",
-              "value": "https://github.com/maacpiash/static/releases/download/${{ steps.tag.outputs.release_tag }}/${{ steps.timestamp.outputs.pdf_name }}"
+              "url": "https://github.com/maacpiash/static/releases/download/${{ steps.meta.outputs.release_tag }}/${{ steps.meta.outputs.pdf_name }}"
             }'
