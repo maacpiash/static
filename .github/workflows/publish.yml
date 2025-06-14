@@ -1,12 +1,12 @@
-name: Build LaTeX document
+name: Build and Release Resume
+
 on:
   push:
-    tags:
-      - '^2025\.(0[1-9]|1[0-2])\.(0[1-9]|[12][0-9]|3[01])$'
     branches:
       - trunk
+
 jobs:
-  build_latex:
+  build_latex_and_release:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
@@ -15,11 +15,30 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: ahad-resume-2025.tex
+      - name: Generate a filename with date
+        id: timestamp
+        run: |
+          STAMP=$(TZ="Australia/Sydney" date +"%Y-%m-%d-%H%M")
+          echo "pdf_name=ahad-resume-$STAMP.pdf" >> "$GITHUB_OUTPUT"
+      - name: Rename compiled PDF
+        run: |
+          mv ahad-resume-2025.pdf "${{ steps.timestamp.outputs.pdf_name }}"
       - name: Generate a release tag
         id: tag
-        run: echo "::set-output name=release_tag::$(date +"%Y.%m.%d")"
+        run: |
+          TAG=$(TZ="Australia/Sydney" date +"%Y.%m.%d.%H%M")
+          echo "release_tag=$TAG" >> "$GITHUB_OUTPUT"
       - name: Release PDF file
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ steps.tag.outputs.release_tag }}
-          files: ahad-resume-2025.pdf
+          files: ${{ steps.timestamp.outputs.pdf_name }}
+      - name: Update address for link shortener
+        run: |
+          curl -X POST "${{ secrets.PIASH_ADDRESS }}" \
+            -u "${{ secrets.PIASH_USERNAME }}:${{ secrets.PIASH_PASSWORD }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "key": "resume",
+              "value": "https://github.com/maacpiash/static/releases/download/${{ steps.tag.outputs.release_tag }}/${{ steps.timestamp.outputs.pdf_name }}"
+            }'
