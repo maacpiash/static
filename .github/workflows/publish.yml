@@ -2,8 +2,9 @@ name: Build and Release Resume
 
 on:
   push:
-    branches:
-      - trunk
+    tags:
+      - '^2025\.(0[1-9]|1[0-2])\.(0[1-9]|[12][0-9]|3[01])\.([01][0-9]|2[0-3])[0-5][0-9]$'
+      # DateTime stamp in "YYYY.mm.dd.HHMM" format. It matches tags like "2025.06.26.1429".
 
 jobs:
   build_latex_and_release:
@@ -11,27 +12,26 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
+      - name: Extract release tag
+        id: meta
+        run: |
+          TAG="${GITHUB_REF#refs/tags/}"
+          echo "release_tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "pdf_name=ahad-resume-$TAG.pdf" >> "$GITHUB_OUTPUT"
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
           root_file: ahad-resume-2025.tex
-      - name: Generate shared timestamp
-        id: meta
-        run: |
-          TIMESTAMP=$(TZ="Australia/Sydney" date +"%Y.%m.%d.%H%M")
-          echo "release_tag=$TIMESTAMP" >> "$GITHUB_OUTPUT"
-          echo "pdf_name=ahad-resume-$TIMESTAMP.pdf" >> "$GITHUB_OUTPUT"
       - name: Rename compiled PDF
-        run: |
-          mv ahad-resume-2025.pdf "${{ steps.meta.outputs.pdf_name }}"
+        run: mv ahad-resume-2025.pdf "${{ steps.meta.outputs.pdf_name }}"
       - name: Release PDF file
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.meta.outputs.release_tag }}
           files: ${{ steps.meta.outputs.pdf_name }}
       - name: Update address for link shortener
         run: |
-          curl -X POST "${{ secrets.PIASH_ADDRESS }}" \
+          curl -X POST "${{ secrets.PIASH_ENDPOINT }}" \
             -u "${{ secrets.PIASH_USERNAME }}:${{ secrets.PIASH_PASSWORD }}" \
             -H "Content-Type: application/json" \
             -d '{
