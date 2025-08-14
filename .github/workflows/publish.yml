@@ -30,10 +30,10 @@ jobs:
           files: ${{ steps.meta.outputs.pdf_name }}
       - name: Update address for link shortener
         run: |
-          curl -X POST "${{ secrets.PIASH_ENDPOINT }}" \
-            -u "${{ secrets.PIASH_USERNAME }}:${{ secrets.PIASH_PASSWORD }}" \
-            -H "Content-Type: application/json" \
-            -d '{
-              "key": "resume",
-              "url": "https://github.com/maacpiash/static/releases/download/${{ steps.meta.outputs.release_tag }}/${{ steps.meta.outputs.pdf_name }}"
-            }'
+          set -euo pipefail
+          curl -sS -X PUT "$CF_API_URL" \
+            -H "Authorization: Bearer $CF_API_TOKEN" \
+            --data "https://github.com/maacpiash/static/releases/download/${{ steps.meta.outputs.release_tag }}/${{ steps.meta.outputs.pdf_name }}"
+        env:
+          CF_API_URL: ${{ secrets.CF_API_URL }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
