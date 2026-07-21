@@ -20,9 +20,9 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: ahad-resume-2025.tex
+          root_file: ahad-resume-2026.tex
       - name: Rename compiled PDF
-        run: mv ahad-resume-2025.pdf "${{ steps.meta.outputs.pdf_name }}"
+        run: mv ahad-resume-2026.pdf "${{ steps.meta.outputs.pdf_name }}"
       - name: Release PDF file
         uses: softprops/action-gh-release@v2
         with:
